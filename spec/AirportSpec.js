@@ -3,7 +3,7 @@ describe("Airport", function(){
 
   beforeEach(function(){
     airport = new Airport;
-    plane = jasmine.createSpyObj(['plane']);
+    plane = jasmine.createSpyObj('plane', ['land', 'isLanded']);
   });
 
   it("should be able to store planes", function(){
@@ -15,4 +15,5 @@ describe("Airport", function(){
     expect(airport.planes).toContain(plane);
   });
 
+  // write the test that expect(plane.land).toHaveBeenCalled();
 });
