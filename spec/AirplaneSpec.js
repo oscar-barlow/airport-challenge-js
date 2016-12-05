@@ -9,8 +9,8 @@ describe("Airplane", function() {
     expect(airplane.isLanded).toBeFalsy();
   });
 
-  // it("should be able to land", function(){
-  //   airplane.land;
-  //   expect(airplane.)
-  // });
+  it("should be able to land", function(){
+    airplane.land();
+    expect(airplane.isLanded).toBeTruthy();
+  });
 });
