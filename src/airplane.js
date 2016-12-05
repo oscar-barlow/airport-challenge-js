@@ -1,3 +1,3 @@
 function Airplane(){
-  this.isLanded = true;
+  this.isLanded = false;
 }
