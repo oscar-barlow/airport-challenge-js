@@ -3,11 +3,14 @@ describe('Plane', function() {
 
   beforeEach(function() {
     plane = new Plane();
+    airport = jasmine.createSpyObj('airport',['clearForLanding']);
   });
 
   describe('when a plane lands', function() {
-    it('confirms that the plane has landed', function() {
-      expect(plane.land()).toEqual('Plane has landed')
+    it('airport should respond with clear for landing', function(){
+      plane.land(airport)
+      expect(airport.clearForLanding).toHaveBeenCalledWith(plane);
     });
   });
+
 });
