@@ -6,7 +6,7 @@ describe("Airport", function() {
   });
 
   it("should be able to contain planes", function() {
-    expect(this.planes).toEqual([]);
+    expect(airport.planes).toEqual([]);
   });
 
 });
