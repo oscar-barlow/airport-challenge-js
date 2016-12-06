@@ -1,4 +1,4 @@
-//Manages Planes 
+//Manages Planes
 
 function Airport() {
   this.planes = [];
@@ -10,4 +10,8 @@ Airport.prototype.land = function(plane) {
 
 Airport.prototype.takeOff = function(plane) {
   this.planes.pop()
+};
+
+Airport.prototype.setWeather = function(weather) {
+  this.weather = weather
 };
